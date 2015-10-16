@@ -10,6 +10,11 @@
 
 @implementation LYShareMenuItem
 
++ (instancetype)shareMenuItemWithImageName:(NSString *)imageName itemTitle:(NSString *)itemTitle{
+    
+    return [[LYShareMenuItem alloc] initShareMenuItemWithImageName:imageName itemTitle:itemTitle];
+}
+
 - (instancetype)initShareMenuItemWithImageName:(NSString *)imageName itemTitle:(NSString *)itemTitle{
     self = [super init];
     if (self) {

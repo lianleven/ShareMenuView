@@ -29,15 +29,15 @@
         LYShareMenuItem *item = nil;
         switch (i%3) {
             case 0:{
-                item = [[LYShareMenuItem alloc] initShareMenuItemWithImageName:@"friend_pr" itemTitle:@"朋友圈"];
+                item = [LYShareMenuItem shareMenuItemWithImageName:@"friend_pr" itemTitle:@"朋友圈"];
                 break;
             }
             case 1:{
-                item = [[LYShareMenuItem alloc] initShareMenuItemWithImageName:@"qzone_pr" itemTitle:@"QQ空间"];
+                item = [LYShareMenuItem shareMenuItemWithImageName:@"qzone_pr" itemTitle:@"QQ空间"];
                 break;
             }
             case 2:{
-                item = [[LYShareMenuItem alloc] initShareMenuItemWithImageName:@"weibo_pr" itemTitle:@"微博"];
+                item = [LYShareMenuItem shareMenuItemWithImageName:@"weibo_pr" itemTitle:@"weibo"];
                 break;
             }
             default:
